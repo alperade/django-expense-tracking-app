@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <main>
+        <h1>Expense Categories</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Number of Receipts</th>
+                </tr>
+            </thead>
+            {% for category in categories %}
+            <tbody>
+                <tr>
+                    <td>{{ category.name }}</td>
+                    <td>{{ category.receipts.count }}</td>
+                </tr>
+            </tbody>
+            {% endfor %}
+        </table>
+    </main>
+{% endblock content %}
