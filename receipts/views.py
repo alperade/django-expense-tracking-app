@@ -2,7 +2,7 @@ from django.shortcuts import render
 from receipts.models import Receipt
 from django.contrib.auth.decorators import login_required
 
-# username: test_user
+# username: test_user / test_user2
 # password: sifre123
 
 
